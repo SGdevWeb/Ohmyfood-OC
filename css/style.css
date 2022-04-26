@@ -2,6 +2,67 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'roboto';
+    src: url('../Polices/roboto/roboto-bold-webfont.eot');
+    src: url('../Polices/roboto/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Polices/roboto/roboto-bold-webfont.woff2') format('woff2'),
+         url('../Polices/roboto/roboto-bold-webfont.woff') format('woff'),
+         url('../Polices/roboto/roboto-bold-webfont.ttf') format('truetype'),
+         url('../Polices/roboto/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../Polices/roboto/roboto-medium-webfont.eot');
+    src: url('../Polices/roboto/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Polices/roboto/roboto-medium-webfont.woff2') format('woff2'),
+         url('../Polices/roboto/roboto-medium-webfont.woff') format('woff'),
+         url('../Polices/roboto/roboto-medium-webfont.ttf') format('truetype'),
+         url('../Polices/roboto/roboto-medium-webfont.svg#robotomedium') format('svg');
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../Polices/roboto/roboto-regular-webfont.eot');
+    src: url('../Polices/roboto/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Polices/roboto/roboto-regular-webfont.woff2') format('woff2'),
+         url('../Polices/roboto/roboto-regular-webfont.woff') format('woff'),
+         url('../Polices/roboto/roboto-regular-webfont.ttf') format('truetype'),
+         url('../Polices/roboto/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'shrikhand';
+    src: url('../Polices/shrikhand/shrikhand-regular-webfont.eot');
+    src: url('../Polices/shrikhand/shrikhand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Polices/shrikhand/shrikhand-regular-webfont.woff2') format('woff2'),
+         url('../Polices/shrikhand/shrikhand-regular-webfont.woff') format('woff'),
+         url('../Polices/shrikhand/shrikhand-regular-webfont.ttf') format('truetype'),
+         url('../Polices/shrikhand/shrikhand-regular-webfont.svg#shrikhandregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+body {
+    margin: 0;
+    font-family: roboto, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: shrikhand, serif;
+}
+
 /* HEADER */
 
 header {
@@ -11,8 +72,8 @@ header {
 }
 
 header #index_title {
-    width: 60%;
-    margin-left: 20%;
+    width: 54%;
+    margin-left: 23%;
 }
 
 header #restaurant_title {
@@ -29,4 +90,40 @@ header a {
 a {
     text-decoration: none;
     color: black;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(64, 64, 64);
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+footer h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+footer a {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+li {
+    margin: 5px;
+}
+
+#first_icon {
+    margin-right: 15px;
+}
+
+#second_icon {
+    margin-right: 9px;
 }
