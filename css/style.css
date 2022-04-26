@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+header {
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header #index_title {
+    width: 60%;
+    margin-left: 20%;
+}
+
+header #restaurant_title {
+    position: relative;
+    right: 20%;
+    width: 60%;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
