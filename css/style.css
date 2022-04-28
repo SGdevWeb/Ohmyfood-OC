@@ -177,6 +177,83 @@ a {
     font-size: 10px;
 }
 
+/* SECTION 4 */
+
+#restaurants {
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+#cards {
+    width: 100%;
+}
+
+.card {
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0px 1px 10px grey;
+    margin-bottom: 15px;
+}
+
+.card a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card__images {
+    height: 130px;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.card .new {
+    background-color: #99E2D0;
+    color: #24876e;
+    font-size: 11px;
+    font-weight: 700;
+    width: 65px;
+    height: 20px;
+    position: relative;
+    top: -120px;
+    left: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .description {
+    display: flex;
+    padding: 10px;
+}
+
+.description__title__place > * {
+    margin: 0;
+}
+
+.description__title__place {
+    width: 80%;
+    font-size: 14px;
+}
+
+.like {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+#cards .card:nth-child(3) .new, #cards .card:nth-child(4) .new  {
+    display: none;
+}
+
 /* FOOTER */
 
 footer {
@@ -189,6 +266,7 @@ footer {
 footer h2 {
     margin-top: 0;
     font-size: 20px;
+    font-family: shrikhand;
 }
 
 footer a {
