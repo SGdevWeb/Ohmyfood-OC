@@ -59,7 +59,7 @@ body {
     font-family: roboto, serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
     font-family: shrikhand, serif;
 }
 
@@ -95,7 +95,7 @@ a {
 /* SECTION 1 */
 
 #search_input {
-    background-color: grey;
+    background-color: lightgray;
     height: 50px;
     display: flex;
     align-items: center;
@@ -107,14 +107,14 @@ a {
 
 #search_input input {
     border: none;
-    background-color: grey;
+    background-color: lightgray;
     font-size: 18px;
 }
 
 /* SECTION 2 */
 
 #explore {
-    background-color: lightgray;
+    background-color: rgb(240, 240, 240);
     margin: 0;
     padding: 10px;
     text-align: center;
@@ -131,6 +131,50 @@ a {
     border-radius: 25px;
     height: 45px;
     background-color: #dc6cc4;
+}
+
+/* SECTION 3 */
+
+#steps {
+    margin-left: 20px;
+    padding-left: 10px;
+    font-size: 14px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+#steps h2 {
+    position: relative;
+    left: -10px;
+}
+
+#step1, #step2, #step3 {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 90%;
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px;
+    margin: 20px 0;
+    box-shadow: 0px 1px 10px grey;
+}
+
+#step1 > *, #step2 > *, #step3 > * {
+    margin-right: 20px;
+    position: relative;
+    left: -10px;
+}
+
+.step_number {
+    width: 21px;
+    height: 21px;
+    background-color: #9356DC;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
 }
 
 /* FOOTER */
