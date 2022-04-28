@@ -111,6 +111,28 @@ a {
     font-size: 18px;
 }
 
+/* SECTION 2 */
+
+#explore {
+    background-color: lightgray;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+#explore h1 {
+    font-family: roboto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#explore button {
+    margin-bottom: 30px;
+    border-radius: 25px;
+    height: 45px;
+    background-color: #dc6cc4;
+}
+
 /* FOOTER */
 
 footer {
