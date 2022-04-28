@@ -92,6 +92,25 @@ a {
     color: black;
 }
 
+/* SECTION 1 */
+
+#search_input {
+    background-color: grey;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#search_input form {
+    margin-left: 80px;
+}
+
+#search_input input {
+    border: none;
+    background-color: grey;
+    font-size: 18px;
+}
+
 /* FOOTER */
 
 footer {
