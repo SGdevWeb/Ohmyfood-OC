@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood2",
+  "version": "1.0.0",
+  "description": "Food application",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SGdevWeb/Ohmyfood2.git"
+  },
+  "author": "Gustin Samuel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SGdevWeb/Ohmyfood2/issues"
+  },
+  "homepage": "https://github.com/SGdevWeb/Ohmyfood2#readme"
+}
