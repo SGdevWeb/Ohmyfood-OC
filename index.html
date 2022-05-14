@@ -13,62 +13,62 @@
 
     <!-- HEADER -->
     <header>
-        <img id="index_title" src="public/images/logo/ohmyfood@2x.svg" alt="logo_ohmyfood">                    
+        <h1 >ohmyfood</h1>                   
     </header>
 
 <main>
 
-    <!-- SECTION 1 -->
+    <!-- SECTION 1 RESEARCH -->
 
-    <div id="search_input">
+    <div class="research">
         <form action="traitement.php" method="post">
             <label for="search"><i class="fa-solid fa-location-dot"></i></label>
             <input type="search" name="search" id="search" value="Paris, Belleville">
         </form>
     </div>
 
-    <!-- SECTION 2 -->
+    <!-- SECTION 2 EXPLORE -->
 
-    <section id="explore">
-        <h1>Réserver le menu qui vous convient</h1>
+    <section class="explore">
+        <h2>Réserver le menu qui vous convient</h2>
         <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
         <button>Explorer nos restaurants</button>
     </section>
 
-    <!-- SECTION 3 -->
+    <!-- SECTION 3 STEPS -->
 
-    <section id="steps">
+    <section class="steps">
         <h2>Fonctionnement</h2>
-        <div id="step1">
-            <div class="step_number">1</div>
+        <div class="step">
+            <div class="step-number">1</div>
             <i class="fa-solid fa-mobile-screen"></i>
-            <div>Choisissez un restaurant</div>
+            <p>Choisissez un restaurant</p>
         </div>
-        <div id="step2">
-            <div class="step_number">2</div>
+        <div class="step">
+            <div class="step-number">2</div>
             <i class="fa-solid fa-list-ul"></i>
-            <div>Composez votre menu</div>
+            <p>Composez votre menu</p>
         </div>
-        <div id="step3">
-            <div class="step_number">3</div>
+        <div class="step">
+            <div class="step-number">3</div>
             <i class="fa-solid fa-store"></i>
-            <div>Dégustez au restaurant</div>
+            <p>Dégustez au restaurant</p>
         </div>
     </section>
 
-    <!-- SECTION 4 -->
+    <!-- SECTION 4 FOODS -->
 
-    <section id="restaurants">
+    <section class="foods">
         <h2>Restaurants</h2>
-        <div id="cards">
+        <div class="cards">
             <div class="card">
                 <a href="la-palette-du-gout.html">
                     <div class="card__images">
                         <img src="public/images/restaurants/La-palette-du-gout.jpg" alt="La palette du goût">
                         <div class="new">Nouveau</div>
                     </div>
-                    <div class="description">
-                        <div class="description__title__place">
+                    <div class="card__description">
+                        <div class="title">
                             <h3>La palette du goût</h3>
                             <p>Ménilmontant</p>    
                         </div>
@@ -84,8 +84,8 @@
                         <img src="public/images/restaurants/La-note-enchantee.jpg" alt="La note enchantée">
                         <div class="new">Nouveau</div>
                     </div>
-                    <div class="description">
-                        <div class="description__title__place">
+                    <div class="card__description">
+                        <div class="title">
                             <h3>La note enchantée</h3>
                             <p>Charonne</p>    
                         </div>
@@ -101,8 +101,8 @@
                         <img src="public/images/restaurants/A-la-francaise.jpg" alt="A la française">
                         <div class="new">Nouveau</div>
                     </div>
-                    <div class="description">
-                        <div class="description__title__place">
+                    <div class="card__description">
+                        <div class="title">
                             <h3>A la française</h3>
                             <p>Cité Rouge</p>    
                         </div>
@@ -118,8 +118,8 @@
                         <img src="public/images/restaurants/Le-delice-des-sens.jpg" alt="Le délice des sens">
                         <div class="new">Nouveau</div>
                     </div>
-                    <div class="description">
-                        <div class="description__title__place">
+                    <div class="card__description">
+                        <div class="title">
                             <h3>Le délice des sens</h3>
                             <p>Folie-Méricourt</p>    
                         </div>
@@ -138,8 +138,8 @@
     <footer>
         <h2>Ohmyfood</h2>
         <ul>
-            <li><a href="#"><i id="first_icon" class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
-            <li><a href="#"><i id="second_icon" class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+            <li><a href="#"><i class="fa-solid fa-utensils first_icon"></i>Proposer un restaurant</a></li>
+            <li><a href="#"><i class="fa-solid fa-handshake-angle second_icon"></i>Devenir partenaire</a></li>
             <li><a href="#">Mentions légales</a></li>
             <li><a href="mailto:ohmyfood-contact@gmail.com">Contact</a></li>
         </ul>

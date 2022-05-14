@@ -35,92 +35,80 @@ body {
   font-family: roboto, serif;
 }
 
-h1 {
-  font-family: shrikhand, serif;
-}
-
-/* HEADER */
-header {
-  margin: 15px;
-  display: flex;
-  justify-content: space-between;
-}
-
-header #index_title {
-  width: 54%;
-  margin-left: 23%;
-}
-
-header #restaurant_title {
-  position: relative;
-  right: 20%;
-  width: 60%;
-}
-
-header a {
-  display: flex;
-  align-items: center;
-}
-
 a {
   text-decoration: none;
   color: black;
 }
 
-/* SECTION 1 */
-#search_input {
+h1 {
+  font-family: shrikhand, serif;
+}
+
+/* HOME PAGE */
+/* HEADER */
+header {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+}
+header h1 {
+  margin: 0;
+  text-align: center;
+}
+header a {
+  display: flex;
+  align-items: center;
+}
+
+/* SECTION 1 RESEARCH */
+.research {
   background-color: lightgray;
   height: 50px;
   display: flex;
   align-items: center;
 }
-
-#search_input form {
-  margin-left: 80px;
+.research form {
+  margin-left: 25%;
 }
-
-#search_input input {
+.research input {
   border: none;
   background-color: lightgray;
   font-size: 18px;
 }
 
-/* SECTION 2 */
-#explore {
+/* SECTION 2 EXPLORE */
+.explore {
   background-color: rgb(240, 240, 240);
   margin: 0;
   padding: 10px;
   text-align: center;
 }
-
-#explore h1 {
+.explore h2 {
   font-family: roboto;
   margin-left: 20px;
   margin-right: 20px;
 }
-
-#explore button {
+.explore button {
   margin-bottom: 30px;
   border-radius: 25px;
   height: 45px;
   background-color: #dc6cc4;
 }
 
-/* SECTION 3 */
-#steps {
+/* SECTION 3 STEPS */
+.steps {
   margin-left: 20px;
   padding-left: 10px;
   font-size: 14px;
   margin-top: 40px;
   margin-bottom: 50px;
 }
-
-#steps h2 {
+.steps h2 {
+  font-family: roboto;
   position: relative;
   left: -10px;
 }
-
-#step1, #step2, #step3 {
+.steps > .step {
   display: flex;
   align-items: center;
   height: 60px;
@@ -130,14 +118,12 @@ a {
   margin: 20px 0;
   box-shadow: 0px 1px 10px grey;
 }
-
-#step1 > *, #step2 > *, #step3 > * {
+.steps > .step > * {
   margin-right: 20px;
   position: relative;
   left: -10px;
 }
-
-.step_number {
+.steps > .step .step-number {
   width: 21px;
   height: 21px;
   background-color: #9356DC;
@@ -149,14 +135,17 @@ a {
   font-size: 10px;
 }
 
-/* SECTION 4 */
-#restaurants {
+/* SECTION 4 FOODS */
+.foods {
   background-color: rgb(240, 240, 240);
   padding: 20px;
   padding-bottom: 40px;
 }
+.foods h2 {
+  font-family: roboto;
+}
 
-#cards {
+.cards {
   width: 100%;
 }
 
@@ -166,7 +155,6 @@ a {
   box-shadow: 0px 1px 10px grey;
   margin-bottom: 15px;
 }
-
 .card a {
   display: flex;
   flex-direction: column;
@@ -177,15 +165,13 @@ a {
   height: 130px;
   position: relative;
 }
-
-.card img {
+.card__images img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
-
-.card .new {
+.card__images .new {
   background-color: #99E2D0;
   color: #24876e;
   font-size: 11px;
@@ -200,18 +186,16 @@ a {
   justify-content: center;
 }
 
-.card .description {
+.card__description {
   display: flex;
   padding: 10px;
 }
-
-.description__title__place > * {
-  margin: 0;
-}
-
-.description__title__place {
+.card__description .title {
   width: 80%;
   font-size: 14px;
+}
+.card__description .title > * {
+  margin: 0;
 }
 
 .like {
@@ -222,7 +206,7 @@ a {
   font-size: 22px;
 }
 
-#cards .card:nth-child(3) .new, #cards .card:nth-child(4) .new {
+.cards .card:nth-child(3) .new, .cards .card:nth-child(4) .new {
   display: none;
 }
 
@@ -233,58 +217,53 @@ footer {
   margin: 0;
   padding: 20px;
 }
-
 footer h2 {
   margin-top: 0;
   font-size: 20px;
   font-family: shrikhand;
 }
-
-footer a {
-  color: white;
-}
-
-ul {
+footer ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-
-li {
+footer li {
   margin: 5px;
 }
+footer a {
+  color: white;
+}
 
-#first_icon {
+.first_icon {
   margin-right: 15px;
 }
 
-#second_icon {
+.second_icon {
   margin-right: 9px;
 }
 
-/* A LA FRANCAISE */
-/* SECTION 1 */
-#image-resto {
+/* PAGES */
+/* SECTION 1 FOOD-IMAGE */
+.food-img {
   height: 200px;
 }
-
-#image-resto img {
+.food-img img {
   object-fit: cover;
   height: 100%;
   width: 100%;
 }
 
-/* SECTION 2 */
+/* SECTION 2 MENU  */
 body {
   background-color: rgb(239, 239, 239);
 }
 
 h2 {
   font-family: shrikhand, serif;
-  font-size: 30px;
+  font-size: 25px;
 }
 
-#menu {
+.menu {
   background-color: rgb(239, 239, 239);
   border-radius: 30px 30px 0 0;
   padding-top: 5px;
@@ -292,65 +271,58 @@ h2 {
   position: relative;
   bottom: 30px;
 }
-
-#nom-resto {
+.menu .food-name {
   display: flex;
   justify-content: space-between;
   margin: 15px;
 }
-
-#menu h3 {
+.menu h3 {
   margin: 15px;
   text-transform: uppercase;
   font-weight: 400;
   display: flex;
   height: 35px;
 }
-
-#menu h3 span {
+.menu h3 span {
   border-bottom: 3px solid #99E2D0;
 }
 
-#like-page {
+.like-page {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#like-page i {
+.like-page i {
   font-size: 30px;
   position: relative;
   bottom: 5px;
 }
 
-#menu #description {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-}
-
-#choice {
+.choice {
   background-color: #FFF;
   margin: 10px;
   padding: 10px;
   border-radius: 15px;
 }
-
-#choice h4 {
+.choice h4 {
   margin: 0;
 }
-
-#choice #price {
+.choice .description {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.choice .price {
   font-weight: 600;
 }
 
-#bouton-commande {
+.btn-order {
   display: flex;
   justify-content: center;
   margin-top: 40px;
 }
-
-#menu button {
+.btn-order button {
   margin-bottom: 30px;
   border-radius: 25px;
   height: 45px;
@@ -361,7 +333,7 @@ h2 {
   padding-right: 40px;
 }
 
-#plats, #desserts {
+.plats, .desserts {
   margin-top: 40px;
 }
 
