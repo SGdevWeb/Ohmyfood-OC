@@ -106,7 +106,7 @@ header {
 /* SECTION 2 EXPLORE */
 
 .explore {
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(230, 230, 230);
     margin: 0;
     padding: 10px;
     text-align: center;
@@ -115,12 +115,21 @@ header {
         margin-left: 20px;
         margin-right: 20px;
     }
-    button {
+    p {
         margin-bottom: 30px;
-        border-radius: 25px;
-        height: 45px;
-        background-color: #dc6cc4;
-    }
+    }    
+}
+
+.btn {
+    margin-bottom: 30px;
+    border-radius: 25px;
+    height: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    color: #FFF;
+    background: linear-gradient(#dc6cc4, #9356DC);
+    border: none;
 }
 
 /* SECTION 3 STEPS */
@@ -361,13 +370,7 @@ h2 {
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    button {
-        margin-bottom: 30px;
-        border-radius: 25px;
-        height: 45px;
-        background-color: #dc6cc4;
-        border: 1px solid #dc6cc4;
-        color: #FFF;
+    .btn {
         padding-left: 40px;
         padding-right: 40px;
     }
