@@ -68,6 +68,13 @@ h1 {
     font-family: shrikhand, serif;
 }
 
+/* COLORS */
+
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$btn-color: linear-gradient($secondary-color, $primary-color);
+
 /* HOME PAGE */
 
 /* HEADER */
@@ -128,8 +135,13 @@ header {
     padding-right: 20px;
     font-size: 14px;
     color: #FFF;
-    background: linear-gradient(#dc6cc4, #9356DC);
+    background: $btn-color;
     border: none;
+    box-shadow: 0px 1px 6px #8b8a8a;
+    &:hover {
+        background: linear-gradient(lighten($secondary-color,10), lighten($primary-color,10));
+        box-shadow: 1px 2px 4px #8b8a8a;
+    }
 }
 
 /* SECTION 3 STEPS */
@@ -162,13 +174,17 @@ header {
         .step-number {
             width: 21px;
             height: 21px;
-            background-color: #9356DC;
+            background-color: $primary-color;
             color: white;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 10px;
+        }
+        .icon {
+            color: #000;
+            opacity: 0.6;
         }
     }  
 }
@@ -205,15 +221,15 @@ header {
 .card__images {
     height: 130px;
     position: relative;
-    img{
+    img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         border-radius: 20px 20px 0 0;
     }
     .new {
-        background-color: #99E2D0;
-        color: #24876e;
+        background-color: $tertiary-color;
+        color: darken($color: $tertiary-color, $amount: 30);
         font-size: 11px;
         font-weight: 700;
         width: 65px;
@@ -228,10 +244,16 @@ header {
 }
 
 .card__description {
-    display: flex;
-    padding: 10px;
+    padding: 15px;
     .title {
-        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        > * {
+            margin: 0;
+        }
+    }
+    .place {
         font-size: 14px;
         > * {
             margin: 0;
@@ -240,11 +262,33 @@ header {
 }
 
 .like {
-    width: 20%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 3px;
+    margin-right: 10px;
     font-size: 22px;
+    cursor: pointer;
+    &:hover {
+        .full-heart{
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    & .empty-heart {
+        z-index: 2;
+        color: #000;
+    }
+    & .full-heart {
+        position: absolute;
+        opacity: 0;
+        transform: scale(0);
+        transform-origin: bottom;
+        z-index: 1;
+        font-size: 20px;
+        background-image: $btn-color;  
+        background-clip: text; -webkit-background-clip: text; color: transparent;
+        transition: all 500ms;
+    }
 }
 
 .cards .card:nth-child(3) .new, .cards .card:nth-child(4) .new  {
@@ -322,8 +366,12 @@ h2 {
     .food-name {
         display: flex;
         justify-content: space-between;
-        margin: 15px;
+        align-items: baseline;
+        > * {
+            margin: 15px;
+        } 
     }
+
     h3 {
         margin: 15px;
         text-transform: uppercase;
@@ -331,21 +379,9 @@ h2 {
         display: flex;
         height: 35px;
         span {
-            border-bottom: 3px solid #99E2D0;
+            border-bottom: 3px solid $tertiary-color;
         }
     }
-}
-
-.like-page {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
-
-.like-page i {
-    font-size: 30px;
-    position: relative;
-    bottom: 5px;
 }
 
 .choice {
