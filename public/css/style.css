@@ -416,64 +416,59 @@ h2 {
   height: 3.5rem;
 }
 .menu h3 span {
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 0.3rem solid #99E2D0;
 }
 
 /* ANIMATION OF CHOICES */
 .choice {
   display: flex;
-  justify-content: space-between;
   background-color: #FFF;
   margin: 1rem;
   border-radius: 1.5rem;
-  position: relative;
+  cursor: pointer;
   overflow: hidden;
 }
-.choice__selected {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
-  width: 20%;
-  border-radius: 0 1.5rem 1.5rem 0;
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform 2000ms;
-}
-.choice .check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  position: absolute;
-  right: -50px;
-  width: 50px;
-  color: #FFF;
-  transition: transform 2000ms;
-  transform: translateX(0) rotate(-180deg);
-}
 .choice:hover .choice__selected {
-  transform: scaleX(1);
+  margin-right: 0;
 }
 .choice:hover .check {
-  transform: translateX(-125px) rotate(0);
+  transform: translateX(2.5rem) rotate(0);
 }
-.choice:hover .price {
-  transform: translateX(-200px);
+.choice__selected {
+  width: 8rem;
+  display: flex;
+  align-items: center;
+  background-color: #99E2D0;
+  margin-right: -8rem;
+  transition: 2s;
+}
+.choice .check {
+  font-size: 1.5rem;
+  color: #fff;
+  transition: transform 2000ms;
+  transform: translateX(0) rotate(-180deg);
 }
 .choice__content {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  max-width: 100%;
   padding: 1rem;
+  overflow: hidden;
 }
-.choice__content h4 {
+.choice__content .description {
+  max-width: 90%;
+}
+.choice__content .description h4 {
   font-size: 1.6rem;
   margin: 0;
 }
-.choice__content .description {
+.choice__content .description p {
+  margin: 0;
+  width: 100%;
   font-size: 1.4rem;
+}
+.choice__content .description > * {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -481,12 +476,8 @@ h2 {
 .choice__content .price {
   display: flex;
   align-items: flex-end;
-  position: relative;
-  right: -20%;
   font-size: 1.4rem;
   font-weight: 600;
-  transform: translate(0);
-  transition: transform 2000ms;
 }
 
 /* END ANIMATION */
