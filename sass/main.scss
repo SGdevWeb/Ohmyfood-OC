@@ -54,6 +54,10 @@
 
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     margin: 0;
     font-family: roboto, serif;
@@ -80,8 +84,8 @@ h1 {
     &::after {
         content: " ";
         display: flex;
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
         margin: 8px;
         border-radius: 50%;
         border: 30px solid;
@@ -133,10 +137,11 @@ $btn-color: linear-gradient($secondary-color, $primary-color);
 /* HEADER */
 
 header {
-    margin: 15px;
+    margin: 1.5rem;
     display: flex;
     justify-content: center;
     h1 {
+        font-size: 3rem;
         margin: 0;
         text-align: center;
     }
@@ -150,16 +155,19 @@ header {
 
 .research {
     background-color: lightgray;
-    height: 50px;
+    height: 5rem;
     display: flex;
     align-items: center;
     form {
         margin-left: 25%;
     }
+    label {
+        font-size: 1.5rem;
+    }
     input {
         border: none;
         background-color: lightgray;
-        font-size: 18px;
+        font-size: 1.6rem;
     }
 }
 
@@ -168,25 +176,27 @@ header {
 .explore {
     background-color: rgb(230, 230, 230);
     margin: 0;
-    padding: 10px;
+    padding: 1rem;
     text-align: center;
     h2 {
+        font-size: 2.2rem;
         font-family: roboto;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 2.0rem;
+        margin-right: 2.0rem;
     }
     p {
-        margin-bottom: 30px;
+        font-size: 1.6rem;
+        margin-bottom: 3.0rem;
     }    
 }
 
 .btn {
-    margin-bottom: 30px;
-    border-radius: 25px;
-    height: 45px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 14px;
+    margin-bottom: 3rem;
+    border-radius: 2.5rem;
+    height: 4.5rem;
+    padding-left: 2.0rem;
+    padding-right: 2.0rem;
+    font-size: 1.4rem;
     color: #FFF;
     background: $btn-color;
     border: none;
@@ -200,40 +210,40 @@ header {
 /* SECTION 3 STEPS */
 
 .steps {
-    margin-left: 20px;
-    padding-left: 10px;
-    font-size: 14px;
-    margin-top: 40px;
-    margin-bottom: 50px;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    font-size: 1.4rem;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
     h2 {
         font-family: roboto;
         position: relative;
-        left: -10px;
+        left: -1rem;
     }
     > .step {
         display: flex;
         align-items: center;
-        height: 60px;
+        height: 6rem;
         width: 90%;
         background-color: rgb(240, 240, 240);
-        border-radius: 20px;
-        margin: 20px 0;
+        border-radius: 2rem;
+        margin: 2rem 0;
         box-shadow: 0px 1px 10px grey;
         > * {
-            margin-right: 20px;
+            margin-right: 2rem;
             position: relative;
             left: -10px;
         }
         .step-number {
-            width: 21px;
-            height: 21px;
+            width: 2.1rem;
+            height: 2.1rem;
             background-color: $primary-color;
             color: white;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 10px;
+            font-size: 1rem;
         }
         .icon {
             color: #000;
@@ -246,8 +256,8 @@ header {
 
 .foods {
     background-color: rgb(240, 240, 240);
-    padding: 20px;
-    padding-bottom: 40px;
+    padding: 2rem;
+    padding-bottom: 4rem;
     h2 {
         font-family: roboto;
     }
@@ -258,10 +268,10 @@ header {
 }
 
 .card {
-    border-radius: 20px;
+    border-radius: 2rem;
     display: flex;
     box-shadow: 0px 1px 10px grey;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
     a {
         display: flex;
         flex-direction: column;
@@ -272,24 +282,24 @@ header {
 
 
 .card__images {
-    height: 130px;
+    height: 13rem;
     position: relative;
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 20px 20px 0 0;
+        border-radius: 2rem 2rem 0 0;
     }
     .new {
         background-color: $tertiary-color;
         color: darken($color: $tertiary-color, $amount: 30);
-        font-size: 11px;
+        font-size: 1.1rem;
         font-weight: 700;
-        width: 65px;
-        height: 20px;
+        width: 6.5rem;
+        height: 2rem;
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 2rem;
+        right: 2rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -297,17 +307,17 @@ header {
 }
 
 .card__description {
-    padding: 15px;
+    padding: 1.5rem;
     .title {
         display: flex;
         justify-content: space-between;
-        font-size: 14px;
+        font-size: 1.4rem;
         > * {
             margin: 0;
         }
     }
     .place {
-        font-size: 14px;
+        font-size: 1.4rem;
         > * {
             margin: 0;
         }
@@ -317,9 +327,7 @@ header {
 .like {
     display: flex;
     justify-content: center;
-    margin-top: 3px;
-    margin-right: 10px;
-    font-size: 22px;
+    font-size: 2.2rem;
     cursor: pointer;
     &:hover {
         .full-heart{
@@ -337,7 +345,7 @@ header {
         transform: scale(0);
         transform-origin: bottom;
         z-index: 1;
-        font-size: 20px;
+        font-size: 2rem;
         background-image: $btn-color;  
         background-clip: text; -webkit-background-clip: text; color: transparent;
         transition: all 500ms;
@@ -354,12 +362,12 @@ footer {
     background-color: rgb(64, 64, 64);
     color: white;
     margin: 0;
-    padding: 20px;
+    padding: 2rem;
     position: relative;
-    bottom: 30px;
+    bottom: 3rem;
     h2 {
         margin-top: 0;
-        font-size: 20px;
+        font-size: 2rem;
         font-family: shrikhand;
     }
 
@@ -370,20 +378,21 @@ footer {
       }
 
     li {
-        margin: 5px;
+        margin: 0.5rem;
     }
     
     a {
-    color: white;
+        color: white;
+        font-size: 1.4rem;
     }
 }
 
 .first_icon {
-    margin-right: 15px;
+    margin-right: 1.5rem;
 }
 
 .second_icon {
-    margin-right: 9px;
+    margin-right: 0.9rem;
 }
 
 /* PAGES */
@@ -391,7 +400,7 @@ footer {
 /* SECTION 1 FOOD-IMAGE */
 
 .food-img {
-    height: 200px;
+    height: 20rem;
     img {
         object-fit: cover;
         height: 100%;
@@ -403,31 +412,32 @@ footer {
 
 h2 {
     font-family: shrikhand, serif;
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 
 .menu {
     background-color: rgb(239, 239, 239);
-    border-radius: 30px 30px 0 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    border-radius: 3rem 3rem 0 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     position: relative;
-    bottom: 30px;
+    bottom: 3rem;
     .food-name {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
         > * {
-            margin: 15px;
+            margin: 1.5rem;
         } 
     }
 
     h3 {
-        margin: 15px;
+        font-size: 1.8rem;
+        margin: 1.5rem;
         text-transform: uppercase;
         font-weight: 400;
         display: flex;
-        height: 35px;
+        height: 3.5rem;
         span {
             border-bottom: 3px solid $tertiary-color;
         }
@@ -440,8 +450,8 @@ h2 {
     display: flex;
     justify-content: space-between;
     background-color: #FFF;
-    margin: 10px;
-    border-radius: 15px;
+    margin: 1rem;
+    border-radius: 1.5rem;
     position: relative;
     overflow: hidden;
     &__selected {
@@ -451,7 +461,7 @@ h2 {
         align-items: center;
         background-color: #99E2D0;
         width: 20%;
-        border-radius: 0 15px 15px 0;
+        border-radius: 0 1.5rem 1.5rem 0;
         transform-origin: right;
         transform: scaleX(0);
         transition: transform 2000ms;
@@ -483,12 +493,13 @@ h2 {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        padding: 10px;
+        padding: 1rem;
         h4 {
+        font-size: 1.6rem;
         margin: 0;
         }
         .description {
-        font-size: 14px;
+        font-size: 1.4rem;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -498,7 +509,7 @@ h2 {
             align-items: flex-end;
             position: relative;
             right: -20%;
-            font-size: 14px;
+            font-size: 1.4rem;
             font-weight: 600;
             transform: translate(0);
             transition: transform 2000ms;
