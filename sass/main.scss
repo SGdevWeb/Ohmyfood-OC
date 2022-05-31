@@ -522,4 +522,31 @@ h2 {
     margin-top: 40px;
 }
 
+/* ANIMATION OF MENU */
 
+.entree {
+    opacity: 0;
+    animation: appearance 2000ms forwards;
+}
+
+
+.plats {
+    opacity: 0;
+    animation: appearance 2000ms 500ms forwards;
+}
+
+.desserts {
+    opacity: 0;
+    animation: appearance 2000ms 1000ms forwards;
+}
+
+@keyframes appearance {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* END ANIMATION */
