@@ -58,9 +58,31 @@ html {
     font-size: 62.5%;
 }
 
+@media (min-width: 426px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media (min-width: 769px) {
+    html {
+        font-size: 125%;
+    }
+}
+
+@media (min-width: 1025px) {
+    html {
+        font-size: 190%;
+    }
+}
+
 body {
     margin: 0;
     font-family: roboto, serif;
+}
+
+.page {
+    padding-bottom: -30px;
 }
 
 a {
@@ -73,7 +95,7 @@ h1 {
 }
 
 /* LOADING SPINNER */
-
+/*
 .loading-spinner {
     display: flex;
     justify-content: center;
@@ -124,7 +146,7 @@ h1 {
         opacity: 1;
     }
 }
-
+*/
 /* COLORS */
 
 $primary-color: #9356DC;
@@ -363,8 +385,6 @@ footer {
     color: white;
     margin: 0;
     padding: 2rem;
-    position: relative;
-    bottom: 3rem;
     h2 {
         margin-top: 0;
         font-size: 2rem;
@@ -397,6 +417,10 @@ footer {
 
 /* PAGES */
 
+main {
+    background-color: #efefef;
+}
+
 /* SECTION 1 FOOD-IMAGE */
 
 .food-img {
@@ -416,7 +440,7 @@ h2 {
 }
 
 .menu {
-    background-color: rgb(239, 239, 239);
+    background-color: #efefef;
     border-radius: 3rem 3rem 0 0;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -522,15 +546,15 @@ h2 {
 .btn-order {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 4rem;
     .btn {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 }
 
 .plats, .desserts {
-    margin-top: 40px;
+    margin-top: 4rem;
 }
 
 /* ANIMATION OF MENU */
