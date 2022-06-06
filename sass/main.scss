@@ -95,43 +95,49 @@ h1 {
 }
 
 /* LOADING SPINNER */
-/*
+
 .loading-spinner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    &::after {
-        content: " ";
-        display: flex;
-        width: 100px;
-        height: 100px;
-        margin: 8px;
-        border-radius: 50%;
-        border: 30px solid;
-        border-color: #dc6cc4 transparent #9356DC transparent;
-        animation: loading-spinner 1.4s linear infinite;
-    }
+    position: fixed;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: 1rem solid;
+    border-color: #dc6cc4 transparent #9356DC transparent;
+    animation: spin 1.4s linear infinite, loader-opacity 0s 2s  forwards;
 }
 
-  @keyframes loading-spinner {
+@keyframes spin {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
 
     100% {
         transform: rotate(360deg);
     }
-  }
+}
 
-  .page {
+@keyframes loader-opacity {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.page {
     position: absolute;
     left: 0;
     top: 0;
     background-color: #FFF;
-    z-index: 2;
+    z-index: 1;
     width: 100%;
     height: 100%;
     animation: page 0s 2s forwards;
@@ -146,7 +152,7 @@ h1 {
         opacity: 1;
     }
 }
-*/
+
 /* COLORS */
 
 $primary-color: #9356DC;
@@ -159,17 +165,21 @@ $btn-color: linear-gradient($secondary-color, $primary-color);
 /* HEADER */
 
 header {
+    position: relative;
     margin: 1.5rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     h1 {
         font-size: 3rem;
         margin: 0;
-        text-align: center;
     }
     a {
-        display: flex;
-        align-items: center;
+        position: absolute;
+        left: 1rem;
+        i {
+            font-size: 2rem;
+        }
     }
 }
 
@@ -180,9 +190,7 @@ header {
     height: 5rem;
     display: flex;
     align-items: center;
-    form {
-        margin-left: 25%;
-    }
+    justify-content: center;
     label {
         font-size: 1.5rem;
     }
@@ -190,6 +198,10 @@ header {
         border: none;
         background-color: lightgray;
         font-size: 1.6rem;
+        outline: none;
+        &::placeholder {
+            text-align: center;
+        }
     }
 }
 
@@ -225,7 +237,7 @@ header {
     box-shadow: 0px 1px 6px #8b8a8a;
     &:hover {
         background: linear-gradient(lighten($secondary-color,10), lighten($primary-color,10));
-        box-shadow: 1px 2px 4px #8b8a8a;
+        box-shadow: 1px 3px 2px #8b8a8a;
     }
 }
 
@@ -254,7 +266,7 @@ header {
         > * {
             margin-right: 2rem;
             position: relative;
-            left: -10px;
+            left: -1rem;
         }
         .step-number {
             width: 2.1rem;
@@ -294,6 +306,7 @@ header {
     display: flex;
     box-shadow: 0px 1px 10px grey;
     margin-bottom: 1.5rem;
+    background-color: #fff;
     a {
         display: flex;
         flex-direction: column;
@@ -349,7 +362,7 @@ header {
 .like {
     display: flex;
     justify-content: center;
-    font-size: 2.2rem;
+    align-items: center;
     cursor: pointer;
     &:hover {
         .full-heart{
@@ -360,17 +373,17 @@ header {
     & .empty-heart {
         z-index: 2;
         color: #000;
+        font-size: 2.2rem;
     }
     & .full-heart {
         position: absolute;
         opacity: 0;
         transform: scale(0);
-        transform-origin: bottom;
-        z-index: 1;
-        font-size: 2rem;
+        z-index: 2;
+        font-size: 2.4rem;
         background-image: $btn-color;  
         background-clip: text; -webkit-background-clip: text; color: transparent;
-        transition: all 500ms;
+        transition: all 300ms;
     }
 }
 
@@ -417,7 +430,7 @@ footer {
 
 /* PAGES */
 
-main {
+#main-restaurant {
     background-color: #efefef;
 }
 
@@ -492,12 +505,12 @@ h2 {
         align-items: center;
         background-color: #99E2D0;
         margin-right: -8rem;
-        transition: 2s;
+        transition: 1000ms ease-out;
     }
     .check {
         font-size: 1.5rem;
         color: #fff;
-        transition: transform 2000ms;
+        transition: transform 1000ms ease-out;
         transform: translateX(0) rotate(-180deg);
         }
     &__content {
@@ -533,7 +546,7 @@ h2 {
     }
 }
 
-/* END ANIMATION */
+/* END ANIMATION OF CHOICE */
 
 .btn-order {
     display: flex;
@@ -576,4 +589,4 @@ h2 {
     }
 }
 
-/* END ANIMATION */
+/* END ANIMATION OF MENU */
