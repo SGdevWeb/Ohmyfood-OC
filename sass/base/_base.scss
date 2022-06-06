@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-text, serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-family: $font-title, serif;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 426px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media (min-width: 769px) {
+    html {
+        font-size: 125%;
+    }
+}
+
+@media (min-width: 1025px) {
+    html {
+        font-size: 190%;
+    }
+}

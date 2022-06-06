@@ -1,0 +1,220 @@
+/*  HOME PAGE ==================== */
+
+/* SECTION 1 RESEARCH */
+
+.research {
+    background-color: darken($color: $background-color, $amount: 10);
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    label {
+        font-size: 1.5rem;
+    }
+    input {
+        border: none;
+        background-color: darken($color: $background-color, $amount: 10);
+        font-size: 1.6rem;
+        outline: none;
+        &::placeholder {
+            text-align: center;
+            color: #000;
+        }
+    }
+}
+
+/* SECTION 2 EXPLORE */
+
+.explore {
+    background-color: $background-color;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    h2 {
+        font-size: 2.2rem;
+        font-family: roboto;
+        margin-left: 2.0rem;
+        margin-right: 2.0rem;
+    }
+    p {
+        font-size: 1.6rem;
+        margin-bottom: 3.0rem;
+    }    
+}
+
+/* SECTION 3 STEPS */
+
+.steps {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-left: 1rem;
+    font-size: 1.4rem;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    h2 {
+        font-family: roboto;
+        position: relative;
+        left: -1rem;
+    }
+    .step {
+        display: flex;
+        align-items: center;
+        height: 6rem;
+        background-color: $background-color;
+        border-radius: 2rem;
+        margin: 2rem 0;
+        box-shadow: 0px 5px 10px $shadow-color;
+        > * {
+            margin-right: 2rem;
+            position: relative;
+            left: -1rem;
+        }
+        &__number {
+            width: 2.1rem;
+            height: 2.1rem;
+            background-color: $primary-color;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+        }
+        &__icon {
+            color: #000;
+            opacity: 0.6;
+        }
+    }  
+}
+
+/* SECTION 4 RESTAURANTS */
+
+.restaurants {
+    background-color: $background-color;
+    padding: 2rem;
+    padding-bottom: 4rem;
+    h2 {
+        font-family: roboto;
+    }
+}
+
+.cards {
+    width: 100%;
+}
+
+.card {
+    border-radius: 2rem;
+    display: flex;
+    box-shadow: 0px 1px 10px $shadow-color;
+    margin-bottom: 1.5rem;
+    background-color: #fff;
+    a {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    &__images {
+        height: 14rem;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 2rem 2rem 0 0;
+        }
+        .new {
+            background-color: $tertiary-color;
+            color: darken($color: $tertiary-color, $amount: 30);
+            font-size: 1.1rem;
+            font-weight: 700;
+            width: 6.5rem;
+            height: 2rem;
+            border-radius: 0.2rem;
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__description {
+        padding: 1.5rem;
+        .title {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.4rem;
+            > * {
+                margin: 0;
+            }
+        }
+        .place {
+            font-size: 1.4rem;
+            > * {
+                margin: 0;
+            }
+        }
+    }
+}
+
+/* ==================== PAGES ==================== */
+
+#main-restaurant {
+    background-color: #efefef;
+}
+
+/* SECTION 1 RESTAURANT-IMAGE */
+
+.restaurant-img {
+    height: 20rem;
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+/* SECTION 2 MENU  */
+
+h2 {
+    font-family: shrikhand, serif;
+    font-size: 2.5rem;
+}
+
+.menu {
+    background-color: #efefef;
+    border-radius: 3rem 3rem 0 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+    bottom: 3rem;
+    .restaurant-name {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        > * {
+            margin: 1.5rem;
+        } 
+    }
+    h3 {
+        font-size: 1.8rem;
+        margin: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        display: flex;
+        height: 3.5rem;
+        span {
+            border-bottom: 0.3rem solid $tertiary-color;
+        }
+    }
+}
+
+.btn-order {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.plats, .desserts {
+    margin-top: 4rem;
+}

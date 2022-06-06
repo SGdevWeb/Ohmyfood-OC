@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/fa3451f768.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="public/css/normalize.css">
+    <link rel="stylesheet" href="sass/vendors/normalize.css">
     <link rel="stylesheet" href="public/css/style.css">
     <title>Ohmyfood</title>
 </head>
+
 <body>
 
+    <div class="loading-spinner"></div>
 
-<div class="loading-spinner"></div>
     <div class="page">
             
             <!-- HEADER -->
@@ -45,25 +46,25 @@
             <section class="steps">
                 <h2>Fonctionnement</h2>
                 <div class="step">
-                    <div class="step-number">1</div>
-                    <i class="fa-solid fa-mobile-screen icon"></i>
+                    <div class="step__number">1</div>
+                    <i class="fa-solid fa-mobile-screen step__icon"></i>
                     <p>Choisissez un restaurant</p>
                 </div>
                 <div class="step">
-                    <div class="step-number">2</div>
-                    <i class="fa-solid fa-list-ul icon"></i>
+                    <div class="step__number">2</div>
+                    <i class="fa-solid fa-list-ul step__icon"></i>
                     <p>Composez votre menu</p>
                 </div>
                 <div class="step">
-                    <div class="step-number">3</div>
-                    <i class="fa-solid fa-store icon"></i>
+                    <div class="step__number">3</div>
+                    <i class="fa-solid fa-store step__icon"></i>
                     <p>Dégustez au restaurant</p>
                 </div>
             </section>
 
             <!-- SECTION 4 FOODS -->
 
-            <section class="foods">
+            <section class="restaurants">
                 <h2>Restaurants</h2>
                 <div class="cards">
                     <div class="card">
@@ -110,7 +111,6 @@
                         <a href="la-palette-du-gout.html">
                             <div class="card__images">
                                 <img src="public/images/restaurants/A-la-francaise.jpg" alt="A la française">
-                                <div class="new">Nouveau</div>
                             </div>
                             <div class="card__description">
                                 <div class="title">
@@ -130,7 +130,6 @@
                         <a href="la-palette-du-gout.html">
                             <div class="card__images">
                                 <img src="public/images/restaurants/Le-delice-des-sens.jpg" alt="Le délice des sens">
-                                <div class="new">Nouveau</div>
                             </div>
                             <div class="card__description">
                                 <div class="title">
@@ -161,6 +160,7 @@
                 <li><a href="mailto:ohmyfood-contact@gmail.com">Contact</a></li>
             </ul>
         </footer>
+
     </div>
 
 </body>
