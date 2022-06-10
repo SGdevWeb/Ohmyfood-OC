@@ -1,9 +1,6 @@
 /* PAGE LOADING */
 
-.page {
-    position: absolute;
-    left: 0;
-    top: 0;
+.home-page {
     background-color: #FFF;
     z-index: 1;
     width: 100%;
@@ -61,7 +58,7 @@
         padding: 1rem;
         overflow: hidden;
         .description {
-            max-width: 90%;
+            max-width: 85%;
             h4 {
                 font-size: 1.6rem;
                 margin: 0;

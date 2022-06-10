@@ -1,4 +1,4 @@
-/*  HOME PAGE ==================== */
+/* ==================== HOME PAGE ==================== */
 
 /* SECTION 1 RESEARCH */
 
@@ -64,6 +64,13 @@
         border-radius: 2rem;
         margin: 2rem 0;
         box-shadow: 0px 5px 10px $shadow-color;
+        &:hover {
+            background-color: lighten($color: $primary-color, $amount: 35);
+            .step__icon {
+                color: $primary-color;
+                opacity: 1;
+            }
+        }
         > * {
             margin-right: 2rem;
             position: relative;
