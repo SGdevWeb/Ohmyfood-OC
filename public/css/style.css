@@ -396,7 +396,7 @@ footer a {
   overflow: hidden;
 }
 .choice__content .description {
-  max-width: 85%;
+  max-width: 90%;
 }
 .choice__content .description h4 {
   font-size: 1.6rem;
@@ -406,6 +406,7 @@ footer a {
   margin: 0;
   width: 100%;
   font-size: 1.4rem;
+  overflow: hidden;
 }
 .choice__content .description > * {
   white-space: nowrap;

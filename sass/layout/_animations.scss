@@ -58,7 +58,7 @@
         padding: 1rem;
         overflow: hidden;
         .description {
-            max-width: 85%;
+            max-width: 90%;
             h4 {
                 font-size: 1.6rem;
                 margin: 0;
@@ -67,6 +67,7 @@
                 margin: 0;
                 width: 100%;
                 font-size: 1.4rem;
+                overflow: hidden;
             }
             > * {
                 white-space: nowrap;
