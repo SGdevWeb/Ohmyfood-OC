@@ -379,7 +379,7 @@ footer a {
   align-items: center;
   background-color: #99E2D0;
   margin-right: -8rem;
-  transition: 1000ms ease-out;
+  transition: margin-right 1000ms ease-out;
 }
 .choice .check {
   font-size: 1.5rem;
@@ -445,13 +445,18 @@ footer a {
 }
 /* LOADING SPINNER */
 .loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
-  margin: auto;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: -1;
+}
+.loading-spinner::after {
+  content: "";
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
