@@ -5,9 +5,13 @@ header {
     justify-content: center;
     align-items: center;
     box-shadow: 0px 2px 8px darken($color: $shadow-color, $amount: 20);
+
     h1 {
         font-size: 3rem;
         margin: 0;
+        @media (min-width: 1441px) {
+            font-size: 5rem;
+        }
     }
     a {
         position: absolute;
